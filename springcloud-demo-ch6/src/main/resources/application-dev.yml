@@ -1,0 +1,13 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: eureka8086
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.251:8083/eureka/
+    register-with-eureka: false
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5

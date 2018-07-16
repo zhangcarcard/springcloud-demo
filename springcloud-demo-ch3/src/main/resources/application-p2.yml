@@ -1,0 +1,18 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: eureka8083
+
+eureka:
+  instance:
+    #这此时间段中没有心跳，则剔除服务.
+    lease-expiration-duration-in-seconds: 30
+    #心跳时间.
+    lease-renewal-interval-in-seconds: 10
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://192.168.1.251:8083/eureka/

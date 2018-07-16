@@ -1,0 +1,16 @@
+logging:
+  path: ${user.home}/logs/springcloud-demo-ch1
+  file:
+    max-size: 50MB
+server:
+  port: 8082
+  servlet:
+    context-path: /springcloud-demo-ch2
+spring:
+  #main:
+    #web-application-type: servlet
+  profiles:
+    active: dev
+debug: false
+
+

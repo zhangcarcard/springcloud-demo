@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: zoo-service
+  cloud:
+    zookeeper:
+      connect-string: 192.168.1.251:2181
+      discovery:
+        register: true
+        enabled: true
+#        instance-host: 192.168.1.249
