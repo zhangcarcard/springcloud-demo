@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Start-Class: cn.tpson.springcloud.demo.ch3.Application
+Main-Class: org.springframework.boot.loader.JarLauncher
+

@@ -7,15 +7,12 @@ spring:
 eureka:
   instance:
     #这此时间段中没有心跳，则剔除服务.
-    lease-expiration-duration-in-seconds: 30
+    lease-expiration-duration-in-seconds: 2
     #心跳时间.
-    lease-renewal-interval-in-seconds: 10
+    lease-renewal-interval-in-seconds: 1
     prefer-ip-address: true
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://192.168.1.251:8083/eureka/
-  server:
-    enable-self-preservation: false
-    eviction-interval-timer-in-ms: 5000

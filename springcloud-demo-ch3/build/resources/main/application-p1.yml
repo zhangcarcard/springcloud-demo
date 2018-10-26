@@ -15,7 +15,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://192.168.1.251:8083/eureka/
-  server:
-    enable-self-preservation: false
-    eviction-interval-timer-in-ms: 5000
+      defaultZone: http://192.168.1.252:8083/eureka/
